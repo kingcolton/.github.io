@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EVENT SIGN UP</title>
+        <meta charset="UTF-8" />
+        <meta name="viewpoint" content="width-device-width, initial-scale-1, shrink-to-fit=no">
+
+        <!-- Editable CSS for this page -->
+        <link rel="stylesheet" type="text/css" href="asset/css/form.css">
+
+        <!-- Bootstrap CSS (v.4.3.1) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="adminpanel.html" class="nav-link">Admin Panel</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="title">
+            <img src="asset/image/GoogleDoc_Version.png" alt="Sigma Nu Badge">
+        </header>
+        <div class="main">
+            <div class="content">
+                <form action="insert.php" method="POST" class="bootstrapTest">
+                    <h1 id="eventName">
+                        TEST EVENT
+                    </h1>
+                    <br>
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name" class="form-control" required>
+                        <div class="valid-feedback">
+                            Approved
+                        </div>
+                        <br>
+                        <label for="email">RIT Email</label>
+                        <input type="email" id="email" placeholder="abc1234@rit.edu" class="form-control" required>
+                        <div class="valid-feedback">
+                            Approved
+                        </div>
+                        <br>
+                        <label for="interest">Are you interested in Sigma Nu?</label>
+                        <br>
+                        <div class="grid-container">
+                            <input type="radio" id="toggle-yes" name="toggle" required><label for="toggle">&nbsp;Yes</label>
+                            <input type="radio" id="toggle-no" name="toggle" required><label for="toggle">&nbsp;No</label>
+                            <input type="radio" id="toggle-maybe" name="toggle" required><label for="toggle">&nbsp;Maybe</label>
+                        </div>
+                        <div class="valid-feedback">
+                            Approved
+                        </div>
+                        <br>
+                        <button class="btn btn-outline-dark btn-lg" onclick="submit();" value="insert">SIGN UP</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <script src="asset/js/webpack.config.js"></script> <!--Line 48 - 52 are the package. Not created by Colton Bailiff.-->
+        <script src="asset/js/postcss.config.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        <p>Website developed by Brother Colton Bailiff<br>
+            Website's last updated: <!--#flastmod file="index.html" -->
+        </p>
+    </footer>
+</html>

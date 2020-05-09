@@ -1,0 +1,122 @@
+/* HiQ Plugin from npm for style */
+@import 'node_modules/hiq/pcss/hiq.min.css';
+
+:root {
+    --color-primary: #E6E6E6;
+    --selection-color: #ABFFD9;
+    --unitless-max-font-size: 18;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.title {
+    margin: 100px;
+    text-align: center;
+}
+.bootstrapTest {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    background-color: #FFDC00;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #A6A6A6;
+    box-shadow: 0 4px 20px
+    rgba (0, 0, 0, 0.15);
+}
+input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.90rem;
+    background-color: #E6E6E6;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    border-style: hidden;
+}
+button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #A6A6A6;
+    background-color: #E6E6E6;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #BFBFBF;
+    transition: 0.5s;
+}
+.help-text {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: var(--font-size-small);
+}
+input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+.has-dynamic-label {
+    position: relvative;
+    padding-top: 1.5rem;
+}
+#has-dynamic-label label {
+    position: absolute;
+    top: 0;
+    font-size: var(--font-size-small);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+input:valid {
+    border-color: var(--color-primary);
+    background-image: url("data:image/svg+xml,%3Csvg width='45px' height='34px' viewBox='0 0 45 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+input:invalid {
+    border-color: var(--color-error);
+    background-image: url("data:image/svg+xml,%3Csvg width='30px' height='30px' viewBox='0 0 30 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-128.000000, -59.000000%29' fill='%23F44336'%3E%3Cpolygon points='157.848404 61.9920213 145.980053 73.8603723 157.848404 85.7287234 154.856383 88.7207447 142.988032 76.8523936 131.119681 88.7207447 128.12766 85.7287234 139.996011 73.8603723 128.12766 61.9920213 131.119681 59 142.988032 70.8683511 154.856383 59'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+input:invalid:focus {
+    border-color: var(--color-error);
+}
+
+input:invalid + .help-text {
+    color: var(--color-error);
+}
+
+/* Grid */
+#toggle-yes {
+    grid-area: left;
+}
+
+#toggle-no {
+    grid-area: center;
+}
+
+#toggle-maybe {
+    grid-area: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'left center right';
+    margin-top: 5px;
+}
+
+.nav-link {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+footer {
+    text-align: center;
+    color: #BFBFBF;
+    margin-top: 10%;
+}
